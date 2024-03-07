@@ -1,0 +1,86 @@
+/*----------
+    RESET
+----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------
+    LAYOUT
+-------------*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    height: 100px;
+    width: 100px;
+    background-color: #1389B2;
+}
+
+h1{
+    margin: 30px 0;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+/*-----------
+    UTILITY
+-------------*/
+
+.d-flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.gap{
+    gap: 10px;
+}
+
+
+/*-----------
+    COLOR
+-------------*/
+
+body{
+    background-color: #083B4C;
+    font-family: "Roboto", sans-serif;
+}
+
+.fizz{
+    background-color: coral;
+}
+
+.buzz{
+    background-color: #FFD166;
+}
+
+.fizz-buzz{
+    background-color: #F0466F;
+}
+

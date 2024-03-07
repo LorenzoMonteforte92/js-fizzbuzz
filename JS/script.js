@@ -1,16 +1,18 @@
 // stampare in console numeri da 1 a 100
 for(let i = 1; i <= 100; i++){
-    console.log(i)
     
-    // per ogni numero multiplo di 3 stampare fizz
-    // per ogni numero multiplo di 5 stampa buzz
-    // per ogni numero multiplo sia di 3 che di 5 Fizzbuzz
+    // selezionare il div contenitore in cui inserire i div box 
+    let newDiv = document.querySelector(`#num-container`)
+    
+    // aggiungere ai div classi diverse per i tre casi specifici (divisibili per 3, divisibili pre 5 o entrambi)
     if(i % 3 === 0 && i % 5 === 0 ){
-        console.log(i + `-` + ` FizzBuzz`)
+        newDiv.innerHTML +=  `<div class="box fizz-buzz">FizzBuzz</div>`    
     } else if(i % 3 === 0){
-        console.log(i + `-` + ` Fizz`)
+        newDiv.innerHTML +=  `<div class="box fizz">Fizz</div>`
     } else if(i % 5 === 0){
-        console.log(i + `-` + ` Buzz`)
+        newDiv.innerHTML +=  `<div class="box buzz">Buzz</div>`
+    } else {
+        newDiv.innerHTML +=  `<div class="box">${i}</div>`
     }
 }
     
