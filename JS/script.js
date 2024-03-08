@@ -17,7 +17,7 @@ for(let i = 1; i <= 100; i++){
         cssClass = `buzz`
     } else {
         message = i
-        cssClass = ``
+        
     }
 
      // stampare il div a schermo con classi e messaggi 
