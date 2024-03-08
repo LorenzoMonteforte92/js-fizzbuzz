@@ -1,20 +1,29 @@
 // stampare in console numeri da 1 a 100
 for(let i = 1; i <= 100; i++){
     
-    // selezionare il div contenitore in cui inserire i div box 
-    let newDiv = document.querySelector(`#num-container`)
+   
     
-    // aggiungere ai div classi diverse per i tre casi specifici (divisibili per 3, divisibili pre 5 o entrambi)
+    // creare delle variabili con ciò che va inserito nel div e con la classe da aggiungere
+    let mesasge
+    let cssClass
     if(i % 3 === 0 && i % 5 === 0 ){
-        newDiv.innerHTML +=  `<div class="box fizz-buzz">FizzBuzz</div>`    
+        message = `FizzBuzz`
+        cssClass = `fizz-buzz`   
     } else if(i % 3 === 0){
-        newDiv.innerHTML +=  `<div class="box fizz">Fizz</div>`
+        message = `Fizz`
+        cssClass = `fizz`
     } else if(i % 5 === 0){
-        newDiv.innerHTML +=  `<div class="box buzz">Buzz</div>`
+        message = `Buzz`
+        cssClass = `buzz`
     } else {
-        newDiv.innerHTML +=  `<div class="box">${i}</div>`
+        message = i
+        cssClass = ``
     }
-}
-    
+
+     // stampare il div a schermo con classi e messaggi 
+     let newDiv = document.querySelector(`#num-container`)
+     newDiv.innerHTML +=  `<div class="box ${cssClass}">${message}</div>`
+
+}   
 
     
